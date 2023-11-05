@@ -37,7 +37,7 @@ module.exports = {
             ],
         },
         {
-            test: /\.(png|svg|jpg|jpeg|gif)$/i,
+            test: /\.(png|svg|jpg|jpeg|gif|webp)$/i,
             type: 'asset/resource',
         },
         ]
@@ -54,6 +54,18 @@ module.exports = {
                 {
                     from: path.resolve(__dirname, "src", "assets/skillSet-icon"),
                     to: "assets/skillSet-icon"
+                },
+                {
+                    from: path.resolve(__dirname, "src", "assets/achievements"),
+                    to: "assets/achievements"
+                },
+                {
+                    from: path.resolve(__dirname, "src", "assets/achievements-icon"),
+                    to: "assets/achievements-icon"
+                },
+                {
+                    from: path.resolve(__dirname, "src", "assets/icon"),
+                    to: "assets/icon"
                 }
             ]
         })

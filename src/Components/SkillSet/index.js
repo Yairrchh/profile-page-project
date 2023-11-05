@@ -8,9 +8,8 @@ const SkillSet = () => {
     const context = useContext(profilePageContext)
 
     return (
-        <Layout>
             <section>
-                <h3 className="flex justify-center items-center text-4xl tracking-widest text-white">Skill set</h3>
+                <h3 className="flex justify-center items-center mt-6 text-4xl tracking-widest text-white mb-10">Skill set</h3>
                 <div className="flex flex-wrap mt-16 mx-7 justify-center items-center gap-16 grid-cols-div">
                     {
                         context.dataSkillSet.map((data, index) => (
@@ -22,7 +21,6 @@ const SkillSet = () => {
                     }
                 </div>
             </section>
-        </Layout>
     )
 }
 

@@ -9,9 +9,8 @@ const Briefcase = () => {
     const context = useContext(profilePageContext);
 
     return (
-        <Layout>
-        <section>
-            <h3 className="flex justify-center items-center text-4xl tracking-widest text-white">Briefcase</h3>
+        <section className="mb-20">
+            <h3 className="flex justify-center mt-6 items-center text-4xl tracking-widest text-white">Briefcase</h3>
             <div className="flex flex-wrap mt-16 justify-center items-center gap-9  grid-cols-div">
                 {context.dataBriefcase.map((data, index) => (
                     <BriefcaseList
@@ -21,7 +20,6 @@ const Briefcase = () => {
                 ))}
             </div>
         </section>
-        </Layout>
     )
 }
 

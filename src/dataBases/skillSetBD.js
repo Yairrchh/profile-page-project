@@ -37,7 +37,7 @@ const skillSetBD = [
     },
     {
         name: 'Node.js',
-        image: '../assets/skillSet-icon/node(3).png',
+        image: '../assets/skillSet-icon/node-js.svg',
     },
     {
         name: 'Nodemon',

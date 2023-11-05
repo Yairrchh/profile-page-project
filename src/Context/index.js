@@ -2,6 +2,7 @@ import React from "react";
 import {createContext, useState, useEffect} from "react";
 import { briefcaseBD } from "../dataBases/briefcaseBD";
 import { skillSetBD } from "../dataBases/skillSetBD";
+import { achievementsBD } from "../dataBases/achievementsBD";
 
 const profilePageContext = createContext();
 
@@ -12,13 +13,19 @@ const ProfilePageProvider = ({children}) => {
     //state of skillSet
     const [dataSkillSet, setDataSkillSet] = useState([]);
 
+    //state of achievements
+    const [dataAchievements, setDataAchievements] = useState([]);
+
     // state of loading page
     const [loading, setLoading] = useState(true)
+
+    //Open modal
 
     useEffect(() => {
         setTimeout(() => {
             setDataBriefcase(briefcaseBD);
             setDataSkillSet(skillSetBD);
+            setDataAchievements(achievementsBD);
         }, 500)
     },[])
 
@@ -31,6 +38,8 @@ const ProfilePageProvider = ({children}) => {
                 setLoading,
                 dataSkillSet,
                 setDataSkillSet,
+                dataAchievements,
+                setDataAchievements,
             }}
         >
             {children}

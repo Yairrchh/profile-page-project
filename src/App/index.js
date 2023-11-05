@@ -1,9 +1,10 @@
 import React from "react";
 import { useRoutes, BrowserRouter } from "react-router-dom";
 import { Home } from "../Pages/Home";
-import { AboutMe } from "../Pages/AboutMe";
-import { Achievements } from "../Pages/Achievements";
-import { Contact } from "../Pages/Contact";
+import { AboutMe } from "../Components/AboutMe";
+import { BriefcasePage } from "../Pages/BriefcasePage";
+import { AchievementsPage } from "../Pages/AchievementsPage";
+import { ContactPage } from "../Pages/ContactPage";
 import { SkillSetPage } from "../Pages/SkillSetPage";
 import { NotFound } from "../Pages/NotFound";
 import { Navbar } from "../Components/Navbar";
@@ -13,9 +14,9 @@ import "./index.css"
 const AppRoutes = () => {
     let routes = useRoutes([
         {path: '/', element: <Home/>},
-        {path: '/about-me', element: <AboutMe/>},
-        {path: '/achievements', element: <Achievements/>},
-        {path: '/contact', element: <Contact/>},
+        {path: '/briefcase', element: <BriefcasePage/>},
+        {path: '/achievements', element: <AchievementsPage/>},
+        {path: '/contact', element: <ContactPage/>},
         {path: '/skill-set', element: <SkillSetPage/>},
         {path: '/*', element: <NotFound/>},
     ]);

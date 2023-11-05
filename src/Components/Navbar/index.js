@@ -26,9 +26,9 @@ const Navbar = () => {
                 </li>
                 <li className="">
                     <NavLink
-                    to = "/about-me"
+                    to = "/briefcase"
                     className={({ isActive }) => isActive ? activeStyle : undefined}>
-                        About Me
+                        Briefcase
                     </NavLink>
                 </li>
                 <li>

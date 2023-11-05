@@ -20,7 +20,8 @@ const BriefcaseList = ({data}) => {
 
     if(!context.loading) {
         return(
-            <div className="bg-white cursor-pointer flex flex-col items-center w-64 h-128 rounded-lg transition-transform transform-gpu hover:scale-110 ease-out duration-300">
+            <div className="bg-white cursor-pointer boder border-blue-300 flex flex-col items-center
+            w-64 h-128 rounded-lg transition-transform transform-gpu hover:scale-110 ease-out duration-300">
             <figure className="relative mt-7 w-44 h-44 shadow-md shadow-slate-300 rounded-lg">
                 <img className="w-full h-full object-cover flex items-center rounded-lg" src={data.image} alt={data.name}/>
             </figure>
@@ -29,18 +30,27 @@ const BriefcaseList = ({data}) => {
                 <span className="text-sm font-light m-3">{data.description}</span>
             </div>
             <div className="flex flex-col px-2 items-center">
-                <Link>
-                    <button className="text-base text-white font-normal rounded-lg bg-sky-500 px-5 py-1 mt-5 hover:bg-cyan-600 hover:ease-in-out duration-300" name={data.name} to={data.linkDeploy}>Watch Here</button>
-                </Link>
-                <Link>
-                    <button className="text-base text-white font-normal rounded-lg bg-sky-500 px-5 py-1 mt-5 hover:bg-cyan-600 hover:ease-in-out duration-300" name={data.name} to={data.linkRepository}>Repository</button>
-                </Link>
+                <a href={data.linkDeploy} target="_blank" rel="noopener noreferrer">
+                    <button className="text-base text-white font-normal rounded-lg bg-sky-500 px-5
+                    py-1 mt-5 hover:bg-green-400 hover:text-black hover:ease-in-out duration-300"
+                    name={data.name}>Watch Here
+                    </button>
+                </a>
+
+                <a href={data.linkRepository} target="_blank" rel="noopener noreferrer">
+                    <button className="text-base text-white font-normal rounded-lg bg-sky-500 px-5
+                    py-1 mt-5 hover:bg-green-400 hover:text-black hover:ease-in-out duration-300"
+                    name={data.name}>Repository
+                    </button>
+                </a>
+
             </div>
         </div>
         )
     } else {
         return (
-            <div className="bg-gray-300 cursor-pointer flex flex-col items-center w-64 h-128 rounded-lg transition-transform transform-gpu hover:scale-110 ease-out duration-300">
+            <div className="bg-gray-300 cursor-pointer flex flex-col items-center w-64 h-128 rounded-lg
+            transition-transform transform-gpu hover:scale-110 ease-out duration-300">
                 <figure className="relative mt-7 w-44 h-44 shadow-md shadow-slate-300 rounded-lg">
                     <img className="w-full h-full object-cover flex items-center rounded-lg"/>
                 </figure>
@@ -49,8 +59,12 @@ const BriefcaseList = ({data}) => {
                     <span className="text-sm font-light m-3"></span>
                 </div>
                 <div className="flex flex-col px-2 mt-5 items-center">
-                    <button className="text-base text-white font-normal rounded-lg bg-sky-500 px-12 py-1 mt-5 hover:bg-cyan-600 hover:ease-in-out duration-300"/>
-                    <button className="text-base text-white font-normal rounded-lg bg-sky-500 px-12 py-1 mt-5 hover:bg-cyan-600 hover:ease-in-out duration-300"/>
+                <a>
+                    <button className="text-base text-white font-normal rounded-lg bg-sky-500 px-12
+                    py-1 mt-5 hover:bg-green-400 hover:text-black hover:ease-in-out duration-300"/>
+                </a>
+                    <button className="text-base text-white font-normal rounded-lg bg-sky-500 px-12
+                    py-1 mt-5 hover:bg-green-400 hover:text-black hover:ease-in-out duration-300"/>
                 </div>
             </div>
         )
