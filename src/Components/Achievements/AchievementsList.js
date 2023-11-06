@@ -23,7 +23,7 @@ const AchievementsList = ({data}) => {
                 <span className="text-xs">{data.name}</span>
             </div>
             <div className="relative mt-2">
-                <button onClick={() => onOpenModal()} className="text-white rounded-lg mt-3 bg-sky-500 px-12 py-1 hover:bg-green-400 hover:text-black hover:ease-in-out duration-300">View</button>
+                <button onClick={() => onOpenModal()} className="text-white rounded-lg mt-3 bg-sky-500 px-12 py-1 hover:bg-green-300 hover:text-black hover:ease-in-out duration-300">View</button>
             </div>
             {
                 openModal && (

@@ -49,7 +49,7 @@ const Navbar = () => {
                     <NavLink
                     to = "/contact"
                     className={({ isActive }) => isActive ? activeStyle : undefined}>
-                        Contact
+                        Contact Us
                     </NavLink>
                 </li>
             </ul>

@@ -1,9 +1,13 @@
 import React from "react";
+import { Layout } from "../../Components/Layout";
+import { Contact } from "../../Components/Contact";
 
 const ContactPage = () => {
     return (
-        <div>Contact</div>
+        <Layout>
+            <Contact/>
+        </Layout>
     )
 }
 
-export {ContactPage};
+export {ContactPage}

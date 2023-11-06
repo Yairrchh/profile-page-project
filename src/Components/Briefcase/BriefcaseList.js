@@ -32,14 +32,14 @@ const BriefcaseList = ({data}) => {
             <div className="flex flex-col px-2 items-center">
                 <a href={data.linkDeploy} target="_blank" rel="noopener noreferrer">
                     <button className="text-base text-white font-normal rounded-lg bg-sky-500 px-5
-                    py-1 mt-5 hover:bg-green-400 hover:text-black hover:ease-in-out duration-300"
+                    py-1 mt-5 hover:bg-green-300 hover:text-black hover:ease-in-out duration-300"
                     name={data.name}>Watch Here
                     </button>
                 </a>
 
                 <a href={data.linkRepository} target="_blank" rel="noopener noreferrer">
                     <button className="text-base text-white font-normal rounded-lg bg-sky-500 px-5
-                    py-1 mt-5 hover:bg-green-400 hover:text-black hover:ease-in-out duration-300"
+                    py-1 mt-5 hover:bg-green-300 hover:text-black hover:ease-in-out duration-300"
                     name={data.name}>Repository
                     </button>
                 </a>
