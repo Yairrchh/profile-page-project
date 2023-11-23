@@ -9,7 +9,6 @@ import { Contact } from "../../Components/Contact";
 
 const Home = () => {
     return (
-        <>
             <Layout>
                 <AboutMe/>
                 <Briefcase/>
@@ -17,7 +16,6 @@ const Home = () => {
                 <SkillSet/>
                 <Contact/>
             </Layout>
-        </>
     )
 }
 

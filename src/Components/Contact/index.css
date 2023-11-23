@@ -13,3 +13,10 @@
     transition: transform .5s, color .3s;
 }
 
+
+
+@media (max-width: 767px) {
+    .div-form{
+        margin-top: 80px;
+    }
+}

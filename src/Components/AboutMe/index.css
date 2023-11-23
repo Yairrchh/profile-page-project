@@ -1,0 +1,21 @@
+.div-container{
+    margin-top: -35px;
+}
+
+.figure-img{
+    width: 40%;
+}
+
+@media (max-width: 767px) {
+    .div-h1-h3-p p{
+        width: 100%;
+    }
+    .div-h1-h3-p h1{
+        font-size: 50px;
+    }
+
+    .figure-img{
+        width: 100%;
+    }
+
+}

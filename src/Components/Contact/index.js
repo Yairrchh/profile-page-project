@@ -34,7 +34,7 @@ const Contact = () => {
     }
 
     return (
-        <div>
+        <div className="div-form">
         <form className="bg-white m-auto w-11/12 max-w-sm p-8 rounded-lg shadow-lg text-center" onSubmit={sendEmail}>
             <h1 className="text-black text-4xl mb-6">Contact Us</h1>
             <div className="mt-3 grid gap-4">

@@ -1,22 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import {useMediaQuery} from "react-responsive"
+
 import "./navbar.css"
 
 const Navbar = () => {
     const activeStyle = 'cursor-pointer  underline underline-offset-8 rounded-md bg-sky-500 p-1.5 hover:shadow-white hover:ease-in-out duration-300'
 
+    const [isOpenMenu, setIsOpenMenu] = useState(false);
+
+    const isTableOrMobile = useMediaQuery({maxWidth: 767})
+
+    const showMenu = () => {
+        setIsOpenMenu(!isOpenMenu)
+    }
+    //"flex items-center gap-8"
+
     return (
-        <nav className= "font-sans text-white flex justify-between items-center fixed z-10 top-0 w-full py-5 px-8 border-b border-b-slate-400 ">
+        <nav className= "font-sans text-white flex flex-wrap justify-center items-center gap-x-72 w-full fixed z-50 top-0 py-5 px-8 border-b border-b-slate-400">
+            <div className={`${isTableOrMobile ? 'w-full flex justify-between items-center mt-1' : 'hidden'}`}>
+            <figure className='flex gap-2 items-center text-lg'>
+                    <img className="w-10 h-10 rounded-full" src="https://scontent-ams2-1.xx.fbcdn.net/v/t1.6435-9/88132159_2597930860487211_6294530870166421504_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=be3454&_nc_ohc=x4EOiTIzM7UAX8L71Vm&_nc_ht=scontent-ams2-1.xx&oh=00_AfAnAQ8gGQQ-jlLNDiehZYDvNKAZq-X_9AxhUIri30DjGA&oe=65629DE8" alt="profile pic"/>
+                    <p className="text-sm">Yanhfrey Chira
+                        <br />
+                        <small>Frontend Developer and Backend</small>
+                    </p>
+                </figure>
+                <button className={`${isTableOrMobile ? 'm-1' : 'hidden'}`} onClick={showMenu}>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+                    </svg>
+                </button>
+            </div>
             <div>
-                <a className="flex gap-5 items-center text-lg">
+                <figure className={`${isTableOrMobile ? 'hidden': "flex gap-5 items-center text-lg"}`}>
                     <img className="w-20 h-20 rounded-full" src="https://scontent-ams2-1.xx.fbcdn.net/v/t1.6435-9/88132159_2597930860487211_6294530870166421504_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=be3454&_nc_ohc=x4EOiTIzM7UAX8L71Vm&_nc_ht=scontent-ams2-1.xx&oh=00_AfAnAQ8gGQQ-jlLNDiehZYDvNKAZq-X_9AxhUIri30DjGA&oe=65629DE8" alt="profile pic"/>
                     <p>Yanhfrey Chira
                         <br />
                         <small>Programmer | Frontend Developer and Backend</small>
                     </p>
-                </a>
+                </figure>
             </div>
-            <ul className="flex items-center gap-8">
+            <ul className={`${isTableOrMobile ? `${isOpenMenu ? 'flex' : 'hidden'} mt-4 flex-col items-center gap-3 text-sm` : "flex items-center gap-8"}`}>
                 <li>
                     <NavLink
                     to = "/"

@@ -7,7 +7,7 @@ import gmail from "../../assets/icon/pngwing.com.svg"
 
 const Footer = () => {
     return (
-        <footer className="bg-gray-800 text-white h-32">
+        <footer className=" bg-blue-500 text-white h-32 bottom-0">
             <div className="flex flex-col items-center">
                 <div className=" flex gap-4 items-center w-56 h-20">
                     <a href="https://github.com/Yairrchh" target="_blank" rel="noopener noreferrer">
@@ -23,7 +23,7 @@ const Footer = () => {
                         <img src={gmail}/>
                     </a>
                 </div>
-                <p>Developed and designed by Yanhfrey Chira. @2023. All rights reserved</p>
+                <p className="text-center font-light mx-3">Developed and designed by Yanhfrey Chira. @2023. All rights reserved</p>
             </div>
         </footer>
 

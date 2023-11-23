@@ -28,8 +28,8 @@ const App = () => {
     return (
         <ProfilePageProvider>
             <BrowserRouter>
-                <AppRoutes/>
                 <Navbar/>
+                <AppRoutes/>
             </BrowserRouter>
         </ProfilePageProvider>
     )
