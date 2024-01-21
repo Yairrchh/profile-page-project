@@ -66,7 +66,7 @@ module.exports = {
                 {
                     from: path.resolve(__dirname, "src", "assets/icon"),
                     to: "assets/icon"
-                }
+                },
             ]
         })
     ],

@@ -29,8 +29,36 @@ const briefcaseBD = [
         image: "../assets/briefcaseImg/blogpost.png",
         linkDeploy: "https://gentle-treacle-4e1b38.netlify.app/",
         linkRepository: "https://github.com/Yairrchh/hyperblog1.0",
-
+    },
+    {
+        name: "Work done at Olax store",
+        description: "Page made with vite, tailwind.css, react and applying react-router-dom",
+        image: "../assets/briefcaseImg/work-olax.png",
+        linkDeploy: "https://olaxlatamoficial.com/",
+        linkRepository: "https://github.com/Yairrchh/work-olax-page"
+    },
+    {
+        name: "Pokedux",
+        description: "Page made with react, tailwind.css, use Redux to handle the state and consumption of an API.",
+        image: "../assets/briefcaseImg/pokedux.png",
+        linkDeploy: "https://bespoke-dodol-42fc8a.netlify.app/",
+        linkRepository: "https://github.com/Yairrchh/pokedux-react-redux",
+    },
+    {
+        name: "Concert Codplay",
+        description: "Page made with Xstate to create a state machine",
+        image: "../assets/briefcaseImg/page-machine-state.png",
+        linkDeploy: "https://cozy-axolotl-04f769.netlify.app/",
+        linkRepository: "https://github.com/Yairrchh/project-react-state-machine",
+    },
+    {
+        name: "My profile page",
+        description: "Page made with webpack, tailwind.css and react",
+        image: "../assets/briefcaseImg/my-profile-page.png",
+        linkDeploy: "https://classy-crepe-8f2013.netlify.app/",
+        linkRepository: "https://github.com/Yairrchh/profile-page-project",
     }
+
 ]
 
 export {briefcaseBD};

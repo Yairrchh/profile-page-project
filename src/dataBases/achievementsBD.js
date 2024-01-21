@@ -126,6 +126,27 @@ const achievementsBD = [
         image: "../assets/achievements/diploma-sql-mysql.jpg",
     },
     {
+        name: "React.js and Redux professional course",
+        title: "Certificate",
+        otorgedBy: "Platzi",
+        logo: "../assets/achievements-icon/icon-redux.png",
+        image: "../assets/achievements/diploma-react-redux.jpg"
+    },
+    {
+        name: "React.js Navigation with React-Router",
+        title: "Certificate",
+        otorgedBy: "Platzi",
+        logo: "../assets/achievements-icon/icon-react-router.png",
+        image: "../assets/achievements/diploma-react-router.jpg"
+    },
+    {
+        name: "State machine with react.js",
+        title: "Certificate",
+        otorgedBy: "Platzi",
+        logo: "../assets/achievements-icon/icon-machine-state.png",
+        image: "../assets/achievements/diploma-react-state-machines.jpg"
+    },
+    {
         name: "Basic english course A1: Short a common conversations",
         title: "Certificate",
         otorgedBy: "Platzi",

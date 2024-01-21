@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import {useMediaQuery} from "react-responsive"
+import image from '../../assets/icon/myphoto.webp'
 
 import "./navbar.css"
 
@@ -17,11 +18,11 @@ const Navbar = () => {
     //"flex items-center gap-8"
 
     return (
-        <nav className= "font-sans text-white flex flex-wrap justify-center items-center gap-x-72 w-full fixed z-50 top-0 py-5 px-8 border-b border-b-slate-400">
+        <nav className= "font-sans text-white flex flex-wrap justify-center items-center gap-x-72 w-full fixed z-50 top-0 py-2 px-8 border-b border-b-slate-400">
             <div className={`${isTableOrMobile ? 'w-full flex justify-between items-center mt-1' : 'hidden'}`}>
                 <NavLink to="/">
                 <figure className='flex gap-2 items-center text-lg'>
-                    <img className="w-10 h-10 rounded-full" src="https://scontent-ams2-1.xx.fbcdn.net/v/t1.6435-9/88132159_2597930860487211_6294530870166421504_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=be3454&_nc_ohc=x4EOiTIzM7UAX8L71Vm&_nc_ht=scontent-ams2-1.xx&oh=00_AfAnAQ8gGQQ-jlLNDiehZYDvNKAZq-X_9AxhUIri30DjGA&oe=65629DE8" alt="profile pic"/>
+                    <img className="w-10 h-10 rounded-full" src={image} alt="profile pic"/>
                     <p className="text-sm">Yanhfrey Chira
                         <br />
                         <small>Frontend Developer and Backend</small>
@@ -37,7 +38,7 @@ const Navbar = () => {
             <div>
                 <NavLink to="/">
                 <figure className={`${isTableOrMobile ? 'hidden': "flex gap-5 items-center text-lg"}`}>
-                    <img className="w-20 h-20 rounded-full" src="https://scontent-ams2-1.xx.fbcdn.net/v/t1.6435-9/88132159_2597930860487211_6294530870166421504_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=be3454&_nc_ohc=x4EOiTIzM7UAX8L71Vm&_nc_ht=scontent-ams2-1.xx&oh=00_AfAnAQ8gGQQ-jlLNDiehZYDvNKAZq-X_9AxhUIri30DjGA&oe=65629DE8" alt="profile pic"/>
+                    <img className="w-16 h-20 rounded-full" src={image} alt="profile pic"/>
                     <p>Yanhfrey Chira
                         <br />
                         <small>Programmer | Frontend Developer and Backend</small>

@@ -62,6 +62,14 @@ const skillSetBD = [
     {
         name: 'Passport',
         image: '../assets/skillSet-icon/passport.svg',
+    },
+    {
+        name: 'Redux',
+        image: '../assets/skillSet-icon/redux.svg'
+    },
+    {
+        name: 'Xstate',
+        image: '../assets/skillSet-icon/xstate-logo-black.svg'
     }
 ]
 
