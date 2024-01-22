@@ -22,7 +22,7 @@ const Navbar = () => {
             <div className={`${isTableOrMobile ? 'w-full flex justify-between items-center mt-1' : 'hidden'}`}>
                 <NavLink to="/">
                 <figure className='flex gap-2 items-center text-lg'>
-                    <img className="w-10 h-10 rounded-full" src={image} alt="profile pic"/>
+                    <img className="w-12 h-14 rounded-full" src={image} alt="profile pic"/>
                     <p className="text-sm">Yanhfrey Chira
                         <br />
                         <small>Frontend Developer and Backend</small>
@@ -50,28 +50,28 @@ const Navbar = () => {
                 <li>
                     <NavLink
                     to = "/"
-                    className={({ isActive}) => isActive ? activeStyle : undefined}>
+                    className={({ isActive}) => isActive ? activeStyle : undefined} onClick={showMenu}>
                         Home
                     </NavLink>
                 </li>
                 <li className="">
                     <NavLink
                     to = "/briefcase"
-                    className={({ isActive }) => isActive ? activeStyle : undefined}>
+                    className={({ isActive }) => isActive ? activeStyle : undefined} onClick={showMenu}>
                         Briefcase
                     </NavLink>
                 </li>
                 <li>
                     <NavLink
                     to = "/achievements"
-                    className={({ isActive }) => isActive ? activeStyle : undefined}>
+                    className={({ isActive }) => isActive ? activeStyle : undefined} onClick={showMenu}>
                         Achievements
                     </NavLink>
                 </li>
                 <li>
                     <NavLink
                     to = "/skill-set"
-                    className={({ isActive }) => isActive ? activeStyle : undefined}>
+                    className={({ isActive }) => isActive ? activeStyle : undefined} onClick={showMenu}>
                         Skill set
                     </NavLink>
                 </li>
