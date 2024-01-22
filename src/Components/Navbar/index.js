@@ -41,7 +41,7 @@ const Navbar = () => {
                     <img className="w-16 h-20 rounded-full" src={image} alt="profile pic"/>
                     <p>Yanhfrey Chira
                         <br />
-                        <small>Programmer | Frontend Developer and Backend</small>
+                        <small>Programmer | Frontend Developer</small>
                     </p>
                 </figure>
                 </NavLink>
