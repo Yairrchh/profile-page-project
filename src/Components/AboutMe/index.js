@@ -12,7 +12,7 @@ const AboutMe = () => {
                         Git, Git-hub, React, Tailwind.css, Redux, NodeJS, MySQL, PostgreSQL and Xstate.
                         Active Platzi student with several certifications in the Front-End area.
                         Able to create responsive, dynamic and attractive websites for different types of
-                        clients and users. Eager to learn new technologies and tools.
+                        clients and users. Eager to learn new technologies and tools
                         to improve my skills and contribute to the success of the company.</p>
                 </div>
                 <figure className="figure-img">
