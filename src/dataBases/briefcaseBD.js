@@ -39,7 +39,7 @@ const briefcaseBD = [
     },
     {
         name: "Pokedux",
-        description: "Page made with react, tailwind.css, use Redux to handle the state and consumption of an API.",
+        description: "Made with react, tailwind.css, use Redux to handle the state and consumption of an API.",
         image: "../assets/briefcaseImg/pokedux.png",
         linkDeploy: "https://bespoke-dodol-42fc8a.netlify.app/",
         linkRepository: "https://github.com/Yairrchh/pokedux-react-redux",
@@ -57,6 +57,27 @@ const briefcaseBD = [
         image: "../assets/briefcaseImg/my-profile-page.png",
         linkDeploy: "https://classy-crepe-8f2013.netlify.app/",
         linkRepository: "https://github.com/Yairrchh/profile-page-project",
+    },
+    {
+        name: "AiresVal",
+        description: "Made with next.js, tailwind.css, postgreSQL prisma and docker.",
+        image: "../assets/briefcaseImg/airesval.png",
+        linkDeploy: "https://airesval.com/auth/login",
+        linkRepository: "https://github.com/Yairrchh/project-airesval",
+    },
+    {
+        name: "CashFlow",
+        description: "Made with vue.js and css for styles.",
+        image: "../assets/briefcaseImg/cashflow.png",
+        linkDeploy: "https://rainbow-crumble-8fcb08.netlify.app/",
+        linkRepository: "https://github.com/Yairrchh/cash-flow",
+    },
+    {
+        name: "FoodScan",
+        description: "Made with vue.js, Docker and laravel for Databases.",
+        image: "../assets/briefcaseImg/foodscan.png",
+        linkDeploy: "https://bestmenu.es/login",
+        linkRepository: "https://github.com/Yairrchh/project-airesval",
     }
 
 ]
