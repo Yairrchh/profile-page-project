@@ -20,6 +20,14 @@ const skillSetBD = [
         image: '../assets/skillSet-icon/react.svg',
     },
     {
+        name: 'Vue.js',
+        image: '../assets/skillSet-icon/vue.png',
+    },
+    {
+        name : 'Next.js',
+        image: '../assets/skillSet-icon/nextjs.svg'
+    },
+    {
         name: 'Tailwind.css',
         image: '../assets/skillSet-icon/tailwindcss.svg',
     },
