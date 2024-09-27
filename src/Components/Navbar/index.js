@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import {useMediaQuery} from "react-responsive"
-import image from '../../assets/icon/myphoto.webp'
+import image from '../../assets/icon/mifoto.jpg'
 
 import "./navbar.css"
 
